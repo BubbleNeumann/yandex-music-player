@@ -1,1 +1,18 @@
 {% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="/static/style.css">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <form>
+        <label for="playlists">Playlists:</label>
+        <select id="playlists" name="playlists">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </form>
+</div>
+{% endblock %}
